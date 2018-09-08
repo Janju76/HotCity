@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 [CustomEditor(typeof(BuildingFusionDictionary))]
-public class BuildingFusionDictionaryEditor : ObjectDictionaryEditor<Building, Building> {
+public class BuildingFusionDictionaryEditor : ObjectDictionaryEditor<BuildingData, BuildingData> {
 
     protected override void DrawKeyValueHeader()
     {

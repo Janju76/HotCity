@@ -9,7 +9,7 @@ public enum EBuildingSize
 }
 
 [CreateAssetMenu(fileName = "newBuilding", menuName = "HotCity/Buildings/New Building")]
-public class Building : ScriptableObject {
+public class BuildingData : ScriptableObject {
 
     public Color colorReference;
 

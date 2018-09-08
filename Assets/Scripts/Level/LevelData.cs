@@ -10,7 +10,7 @@ public class LevelData : ScriptableObject
 
     public bool[,] Tiles;
 
-    public List<Building> BuildingQ = new List<Building>();
+    public List<BuildingData> BuildingQ = new List<BuildingData>();
 
     public void Refresh()
     {
