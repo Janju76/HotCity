@@ -29,13 +29,19 @@ public class HotTile : MonoBehaviour
         Y = y;
     }
 
+    //Detect if the Cursor starts to pass over the GameObject
     private void OnMouseEnter()
     {
+        GameManager.Instance.SelectedTile = gameObject;
 
     }
 
     private void OnMouseExit()
     {
+        if (GameManager.Instance.SelectedTile == gameObject)
+        {
+            GameManager.Instance.SelectedTile = null;
+        }
 
     }
 
@@ -58,18 +64,18 @@ public class HotTile : MonoBehaviour
             myBuilding = Instantiate<GameObject>(newBuilding.buildingPrefab, transform);
             myBuilding.transform.localScale = buildingData.buildingScaleFactor;
 
-            if (buildingData.buildingType == GameManager.Instance.Settings.emptyBuildingType)
-            {
-                BoxCollider collider = myBuilding.AddComponent<BoxCollider>();
-                MeshRenderer meshRenderer = myBuilding.GetComponentInChildren<MeshRenderer>();
+            //if (buildingData.buildingType == GameManager.Instance.Settings.emptyBuildingType)
+            //{
+            //    BoxCollider collider = myBuilding.AddComponent<BoxCollider>();
+            //    MeshRenderer meshRenderer = myBuilding.GetComponentInChildren<MeshRenderer>();
 
-                if (meshRenderer)
-                {
-                    collider.center = Vector3.zero;
-                    // Hack
-                    collider.size = new Vector3(10, 10, 10);
-                }
-            }
+            //    if (meshRenderer)
+            //    {
+            //        collider.center = Vector3.zero;
+            //        // Hack
+            //        collider.size = new Vector3(10, 10, 10);
+            //    }
+            //}
         }
     }
 }
