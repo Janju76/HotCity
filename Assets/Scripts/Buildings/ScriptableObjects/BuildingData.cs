@@ -9,8 +9,8 @@ public enum EBuildingSize
 }
 
 [CreateAssetMenu(fileName = "newBuilding", menuName = "HotCity/Buildings/New Building")]
-public class BuildingData : ScriptableObject {
-
+public class BuildingData : ScriptableObject
+{
     public Color colorReference;
 
     public BuildingType buildingType;
@@ -23,7 +23,7 @@ public class BuildingData : ScriptableObject {
     public EBuildingSize buildingSize = EBuildingSize.SMALL;
 
     [Tooltip("Building Prefab")]
-    public GameObject   buildingPrefab;
+    public GameObject buildingPrefab;
 
     public BuildingFusionDictionary fusions;
 

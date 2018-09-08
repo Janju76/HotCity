@@ -11,18 +11,13 @@ public class UIPreview : MonoBehaviour
     public Transform Container;
     public UIPoolItem PoolItem;
 
-    private void OnEnable()
+    private void Start()
     {
         Refresh();
     }
 
     public void Refresh()
     {
-        for (var i = 0; i < Container.childCount; i++)
-        {
-            Destroy(Container.GetChild(i).gameObject);
-        }
-
         for (var i = 0; i < Preview.Count; i++)
         {
             if (i < levelData.BuildingQ.Count)
@@ -31,6 +26,19 @@ public class UIPreview : MonoBehaviour
             }
 
             Preview[i].gameObject.SetActive(i < levelData.BuildingQ.Count);
+        }
+
+        for (var i = 0; i < Container.childCount; i++)
+        {
+            Destroy(Container.GetChild(i).gameObject);
+        }
+
+        foreach (var building in GameManager.Instance.BuildingTypes)
+        {
+            var item = Instantiate(PoolItem, Container);
+
+            item.Text.text = building.name;
+            item.Icon.sprite = building.Icon;
         }
     }
 }

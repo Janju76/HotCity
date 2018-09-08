@@ -8,7 +8,10 @@ public class GameManager : MonoBehaviour
 
     public SettingsData Settings;
 
-    public BuildingType BuildingTypes;
+    public List<BuildingType> BuildingTypes = new List<BuildingType>();
+    public List<LevelData> Level = new List<LevelData>();
+
+    public HotGrid Grid;
 
     private void Awake()
     {

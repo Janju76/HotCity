@@ -39,6 +39,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Settings: {fileID: 11400000, guid: 769d0ca5981611743a6c77e18363ab85, type: 2}
+  BuildingTypes:
+  - {fileID: 11400000, guid: 6798cede5cdfa6c47b3991d932e763a8, type: 2}
+  - {fileID: 11400000, guid: 6b5c2cd42daab9e42bb6b40d128f41ad, type: 2}
+  - {fileID: 11400000, guid: 1992c8cfe333094448f45a8c6ad83962, type: 2}
+  - {fileID: 11400000, guid: 5460f853bbe81ae488c59b4a64cd0832, type: 2}
+  - {fileID: 11400000, guid: 466df3f1d0f28334bb519ec88f80c136, type: 2}
+  Level:
+  - {fileID: 11400000, guid: e347c74cfa3b2674ab5c76d6d373d326, type: 2}
+  Grid: {fileID: 0}
 --- !u!224 &224162181500905024
 RectTransform:
   m_ObjectHideFlags: 1

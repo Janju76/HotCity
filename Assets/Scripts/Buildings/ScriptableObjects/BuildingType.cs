@@ -10,7 +10,9 @@ public enum EBuildingTypeRelation
 }
 
 [CreateAssetMenu(fileName = "newBuildingType", menuName = "HotCity/Buildings/New Building Type")]
-public class BuildingType : ScriptableObject {
+public class BuildingType : ScriptableObject
+{
+    public Sprite Icon;
 
     public List<BuildingType> goodNeighbour = new List<BuildingType>();
     public List<BuildingType> badNeighbour = new List<BuildingType>();
