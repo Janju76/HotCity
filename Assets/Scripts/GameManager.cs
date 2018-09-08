@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     public void SetBuilding(int x, int y)
     {
-        if (!Grid.Tiles[y, x].HasBuilding())
+        if (!Grid.Tiles[y, x].HasBuilding() && SurroundingTypes(x,y).Count>0)
         {
             BuildingData first = LevelData.BuildingQ.FirstOrDefault();
             if (first == null)
@@ -50,6 +50,24 @@ public class GameManager : MonoBehaviour
 
     private int CalculateScore(int x, int y, BuildingData buildingData)
     {
+        var surroundingTypes = SurroundingTypes(x, y);
+
+        int scoreIncrease = 0;
+        BuildingType newBuildingType = buildingData.buildingType;
+        foreach (BuildingType surroundingType in surroundingTypes)
+        {
+            if (newBuildingType.goodNeighbour
+                .Contains(surroundingType))
+            {
+                scoreIncrease += 100;
+            }
+        }
+
+        return scoreIncrease;
+    }
+
+    private List<BuildingType> SurroundingTypes(int x, int y)
+    {
         List<BuildingType> surroundingTypes = new List<BuildingType>();
         for (int direction = 0; direction < Directions.GetLength(0); direction++)
         {
@@ -68,19 +86,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-
-        int scoreIncrease = 0;
-        BuildingType newBuildingType = buildingData.buildingType;
-        foreach (BuildingType surroundingType in surroundingTypes)
-        {
-            if (newBuildingType.goodNeighbour
-                .Contains(surroundingType))
-            {
-                scoreIncrease += 100;
-            }
-        }
-
-        return scoreIncrease;
+        return surroundingTypes;
     }
 
     public void Init()
