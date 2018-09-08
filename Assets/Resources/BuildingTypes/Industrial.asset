@@ -11,3 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c699d29f4055f4d8fe0a86cb8b172d, type: 3}
   m_Name: Industrial
   m_EditorClassIdentifier: 
+  goodNeighbour:
+  - {fileID: 11400000}
+  badNeighbour: []

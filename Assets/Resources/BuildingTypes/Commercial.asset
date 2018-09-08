@@ -11,3 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c699d29f4055f4d8fe0a86cb8b172d, type: 3}
   m_Name: Commercial
   m_EditorClassIdentifier: 
+  goodNeighbour:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 6798cede5cdfa6c47b3991d932e763a8, type: 2}
+  - {fileID: 11400000, guid: 466df3f1d0f28334bb519ec88f80c136, type: 2}
+  badNeighbour:
+  - {fileID: 11400000, guid: 1992c8cfe333094448f45a8c6ad83962, type: 2}
