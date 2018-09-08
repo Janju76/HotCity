@@ -36,8 +36,18 @@ public class UIPreview : MonoBehaviour
         {
             var item = Instantiate(PoolItem, Container);
 
-            item.Text.text = building.name;
-            item.Icon.sprite = building.Icon;
+            var cnt = 0;
+
+            for (var i = Preview.Count; i < GameManager.Instance.LevelData.BuildingQ.Count; i++)
+            {
+                if (GameManager.Instance.LevelData.BuildingQ[i].buildingType == building)
+                {
+                    cnt++;
+                }
+            }
+
+            item.Text.text = string.Format("x{0}", cnt);
+            item.Icon.color = building.TileColor;
         }
     }
 }

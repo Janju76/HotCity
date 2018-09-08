@@ -13,6 +13,7 @@ public enum EBuildingTypeRelation
 public class BuildingType : ScriptableObject
 {
     public Sprite Icon;
+    public string Name;
 
     public List<BuildingType> goodNeighbour = new List<BuildingType>();
     public List<BuildingType> badNeighbour = new List<BuildingType>();

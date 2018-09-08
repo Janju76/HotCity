@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Name: Residential
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: 3787498517b077349ac92854a7bb066f, type: 3}
+  Name: Residential
   goodNeighbour:
   - {fileID: 11400000, guid: 5460f853bbe81ae488c59b4a64cd0832, type: 2}
   - {fileID: 11400000, guid: 6b5c2cd42daab9e42bb6b40d128f41ad, type: 2}
   - {fileID: 11400000, guid: 6798cede5cdfa6c47b3991d932e763a8, type: 2}
   badNeighbour:
   - {fileID: 11400000, guid: 1992c8cfe333094448f45a8c6ad83962, type: 2}
-  TileColor: {r: 0, g: 0, b: 0, a: 0}
+  TileColor: {r: 0, g: 0.49803922, b: 1, a: 0}

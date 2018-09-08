@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Name: Industrial
   m_EditorClassIdentifier: 
   Icon: {fileID: 21300000, guid: 990a6d7404863464386a0c67ec8795a4, type: 3}
+  Name: Industrial
   goodNeighbour:
   - {fileID: 11400000}
   badNeighbour: []
-  TileColor: {r: 0, g: 0, b: 0, a: 0}
+  TileColor: {r: 1, g: 1, b: 0, a: 1}
