@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     public UIPreview Preview;
 
+    public GameObject SelectedTile;
+
     public void SetBuilding(int x, int y)
     {
         if (!Grid.Tiles[y, x].HasBuilding() && SurroundingTypes(x,y).Count>0)
