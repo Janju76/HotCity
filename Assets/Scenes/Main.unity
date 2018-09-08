@@ -370,6 +370,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1814210145603420, guid: 947542fb491f4144c9855d2f27380121, type: 2}
+      propertyPath: m_Name
+      value: LevelGrid
+      objectReference: {fileID: 0}
     - target: {fileID: 114971119980807212, guid: 947542fb491f4144c9855d2f27380121,
         type: 2}
       propertyPath: _Camera
@@ -380,23 +384,8 @@ Prefab:
       propertyPath: _target
       value: 
       objectReference: {fileID: 583844120}
-    - target: {fileID: 1814210145603420, guid: 947542fb491f4144c9855d2f27380121, type: 2}
-      propertyPath: m_Name
-      value: LevelGrid
-      objectReference: {fileID: 0}
-    - target: {fileID: 114608194948875154, guid: 947542fb491f4144c9855d2f27380121,
-        type: 2}
-      propertyPath: LevelData
-      value: 
-      objectReference: {fileID: 11400000, guid: e347c74cfa3b2674ab5c76d6d373d326,
-        type: 2}
-    - target: {fileID: 114608194948875154, guid: 947542fb491f4144c9855d2f27380121,
-        type: 2}
-      propertyPath: SettingsData
-      value: 
-      objectReference: {fileID: 11400000, guid: 769d0ca5981611743a6c77e18363ab85,
-        type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114971119980807212, guid: 947542fb491f4144c9855d2f27380121, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 947542fb491f4144c9855d2f27380121, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &2080489068
@@ -495,6 +484,26 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224775741905580852, guid: 8a34a078a1ea5af4d8f1bb324539d7d6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -656
+      objectReference: {fileID: 0}
+    - target: {fileID: 224174800977855858, guid: 8a34a078a1ea5af4d8f1bb324539d7d6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -592
+      objectReference: {fileID: 0}
+    - target: {fileID: 224301188375705262, guid: 8a34a078a1ea5af4d8f1bb324539d7d6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -366
+      objectReference: {fileID: 0}
+    - target: {fileID: 224301188375705262, guid: 8a34a078a1ea5af4d8f1bb324539d7d6,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 428
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a34a078a1ea5af4d8f1bb324539d7d6, type: 2}

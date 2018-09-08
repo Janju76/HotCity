@@ -56,8 +56,8 @@ MonoBehaviour:
   - {fileID: 1835130501169252, guid: 0de6362afcd4f83449b7a40b77313b97, type: 2}
   - {fileID: 1206645640612538, guid: c67fd3f4c03d88e42a6b97fa4b9855c3, type: 2}
   Size: {x: 19, y: 19}
-  LevelData: {fileID: 0}
-  SettingsData: {fileID: 0}
+  LevelData: {fileID: 11400000, guid: e347c74cfa3b2674ab5c76d6d373d326, type: 2}
+  SettingsData: {fileID: 11400000, guid: 769d0ca5981611743a6c77e18363ab85, type: 2}
 --- !u!114 &114971119980807212
 MonoBehaviour:
   m_ObjectHideFlags: 1

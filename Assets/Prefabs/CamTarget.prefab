@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4524598796226314}
+  - component: {fileID: 114499855198139682}
   m_Layer: 0
   m_Name: CamTarget
   m_TagString: Untagged
@@ -117,3 +118,19 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1506614133484726}
   m_Enabled: 1
+--- !u!114 &114499855198139682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506141797635226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a95bd4e97ef24149866d1b8e4f82478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Camera: {fileID: 1506614133484726}
+  _target: {fileID: 1506141797635226}
+  camDistance: 120
+  rotateSpeed: 30
+  translateSpeed: 30
