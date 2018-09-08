@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class HotTile : MonoBehaviour
 {
-    [Tooltip("Type of Buildings that are considered empty and will get an collider")]
-    public  BuildingType    emptyBuildingType;
     private BuildingData    buildingData;
     private GameObject      myBuilding;
 
@@ -23,7 +21,7 @@ public class HotTile : MonoBehaviour
         {
             myBuilding = Instantiate<GameObject>(newBuilding.buildingPrefab, transform);
 
-            if (buildingData.buildingType == emptyBuildingType)
+            if (buildingData.buildingType == GameManager.Instance.Settings.emptyBuildingType)
             {
                 BoxCollider collider = myBuilding.AddComponent<BoxCollider>();
                 MeshRenderer meshRenderer = myBuilding.GetComponentInChildren<MeshRenderer>();
