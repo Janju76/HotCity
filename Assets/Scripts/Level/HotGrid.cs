@@ -24,7 +24,6 @@ public class HotGrid : MonoBehaviour
 
     void Update()
     {
-
     }
 
     public void Refresh()
@@ -34,8 +33,8 @@ public class HotGrid : MonoBehaviour
 
         int totalXAmount = tileDataLevelData.GetLength(0);
         int totalYAmount = tileDataLevelData.GetLength(1);
-        int halfTotalWidth = totalXAmount * (SettingsData.TileWidth+SettingsData.SpaceBetweenTiles)/2;
-        int halfTotalHeight = totalYAmount * (SettingsData.TileHeight + SettingsData.SpaceBetweenTiles)/2;
+        int halfTotalWidth = totalXAmount * (SettingsData.TileWidth + SettingsData.SpaceBetweenTiles) / 2;
+        int halfTotalHeight = totalYAmount * (SettingsData.TileHeight + SettingsData.SpaceBetweenTiles) / 2;
         for (var y = 0; y < totalYAmount; y++)
         {
             for (var x = 0; x < totalXAmount; x++)
@@ -50,13 +49,16 @@ public class HotGrid : MonoBehaviour
                         new Vector3(xPos - halfTotalWidth, 0, zPos - halfTotalHeight), Quaternion.identity);
                     instantiated.transform.parent = this.transform;
 
+                    HotTile hotTile = instantiated.GetComponent<HotTile>();
+                    hotTile.SetPos(x, y);
+
                     if (tileDataLevelData[y, x] != null)
                     {
-                        instantiated.GetComponent<HotTile>()
+                        hotTile
                             .SetBuilding(tileDataLevelData[y, x]);
                     }
 
-                    Tiles[y, x] = instantiated.GetComponent<HotTile>();
+                    Tiles[y, x] = hotTile;
                 }
             }
         }
