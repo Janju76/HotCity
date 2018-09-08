@@ -16,5 +16,5 @@ MonoBehaviour:
   buildingName: Grass
   Icon: {fileID: 21300000, guid: 073f488debc8eca479701fd790dae343, type: 3}
   buildingSize: 1
-  buildingPrefab: {fileID: 0}
+  buildingPrefab: {fileID: 100002, guid: 52637b0829e043c4bbbfd152db67756c, type: 3}
   fusions: {fileID: 0}

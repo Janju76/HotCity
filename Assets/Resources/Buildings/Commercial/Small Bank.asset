@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 505da8f7cfc3bb246abf1e918e9c362c, type: 3}
-  m_Name: Grass
+  m_Name: Small Bank
   m_EditorClassIdentifier: 
   colorReference: {r: 0, g: 0, b: 0, a: 0}
-  buildingType: {fileID: 11400000, guid: 605d8a81b14dc7248a3db816d43c1c46, type: 2}
-  buildingName: Grass
-  Icon: {fileID: 21300000, guid: 073f488debc8eca479701fd790dae343, type: 3}
+  buildingType: {fileID: 0}
+  buildingName: Small Bank
+  Icon: {fileID: 0}
   buildingSize: 1
-  buildingPrefab: {fileID: 100002, guid: 207edf626c0f0eb4e8ff0fedd847f29c, type: 3}
+  buildingPrefab: {fileID: 100002, guid: 8c7b2e68e4afd6e44b1cc0f4f5cf970d, type: 3}
   fusions: {fileID: 0}
