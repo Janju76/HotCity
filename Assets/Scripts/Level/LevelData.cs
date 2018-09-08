@@ -45,8 +45,8 @@ public class LevelData : ScriptableObject
                 {
                     TileExists[y, x] = true;
 
-                    if (c != Color.white) // white == empty tile
-                    {
+                    //if (c != Color.white) // white == empty tile
+                    //{
                         if (buildings.ContainsKey(c))
                         {
                             List<BuildingData> buildingsList = buildings[c];
@@ -54,9 +54,9 @@ public class LevelData : ScriptableObject
                         }
                         else
                         {
-                            Debug.LogError("leavel loading: color " + c + " not supported!");
+                            Debug.LogWarning("leavel loading: color " + c + " not supported!");
                         }
-                    }
+                    //}
                 }
                 else
                 {
