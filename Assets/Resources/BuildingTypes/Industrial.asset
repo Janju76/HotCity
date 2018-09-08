@@ -14,3 +14,4 @@ MonoBehaviour:
   goodNeighbour:
   - {fileID: 11400000}
   badNeighbour: []
+  TileColor: {r: 1, g: 0.96422845, b: 0.48584908, a: 0}

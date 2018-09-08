@@ -15,7 +15,9 @@ public class HotTile : MonoBehaviour
         if (myBuilding)
             Destroy(myBuilding);
 
+        buildingData = newBuilding;
+
         if (newBuilding.buildingPrefab)
-            myBuilding = Instantiate<GameObject>(newBuilding.buildingPrefab);
+            myBuilding = Instantiate<GameObject>(newBuilding.buildingPrefab, transform);
     }
 }
