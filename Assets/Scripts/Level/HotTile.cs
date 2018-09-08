@@ -6,8 +6,9 @@ using UnityEngine.EventSystems;
 
 public class HotTile : MonoBehaviour
 {
+    public GameObject myBuilding;
+
     private BuildingData    buildingData;
-    private GameObject      myBuilding;
 
     public int X;
     public int Y;
