@@ -15,6 +15,11 @@ public class GameManager : MonoBehaviour
 
     public GameObject SelectedTile = null;
 
+    public void SetBuilding(int x, int y)
+    {
+
+    }
+
     private void Awake()
     {
         Instance = this;

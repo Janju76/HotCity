@@ -26,11 +26,6 @@ public class HotGrid : MonoBehaviour
     {
     }
 
-    public void SetBuilding(int x, int y)
-    {
-        
-    }
-
     public void Refresh()
     {
         LevelData.Refresh();

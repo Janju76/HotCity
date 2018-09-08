@@ -34,7 +34,6 @@ public class HotTile : MonoBehaviour
 
     private void OnMouseDown()
     {
-        GameManager.Instance.Grid.SetBuilding(X, Y);
     }
 
     public void SetBuilding(BuildingData newBuilding)
