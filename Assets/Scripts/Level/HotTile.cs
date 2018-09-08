@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class HotTile : MonoBehaviour
 {
@@ -15,6 +16,20 @@ public class HotTile : MonoBehaviour
     {
         X = x;
         Y = y;
+    }
+
+    //Detect if the Cursor starts to pass over the GameObject
+    private void OnMouseEnter()
+    {
+        GameManager.Instance.SelectedTile = gameObject;
+    }
+
+    private void OnMouseExit()
+    {
+        if (GameManager.Instance.SelectedTile == gameObject)
+        {
+        GameManager.Instance.SelectedTile = null;
+        }
     }
 
     public void SetBuilding(BuildingData newBuilding)

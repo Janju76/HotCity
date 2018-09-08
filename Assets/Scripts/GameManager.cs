@@ -13,8 +13,11 @@ public class GameManager : MonoBehaviour
 
     public HotGrid Grid;
 
+    public GameObject SelectedTile = null;
+
     private void Awake()
     {
         Instance = this;
     }
+
 }
