@@ -7,9 +7,6 @@ using Random = UnityEngine.Random;
 public class HotGrid : MonoBehaviour
 {
     public List<GameObject> GroundTilePrefab;
-
-    public Vector2 Size = new Vector2(19, 19);
-
     public LevelData LevelData;
     public SettingsData SettingsData;
 
@@ -45,6 +42,12 @@ public class HotGrid : MonoBehaviour
                     GameObject instantiated = Instantiate(toInstantiate,
                         new Vector3(xPos - halfTotalWidth, 0, zPos - halfTotalHeight), Quaternion.identity);
                     instantiated.transform.parent = this.transform;
+
+                    if (tileDataLevelData[y, x] != null)
+                    {
+                        instantiated.GetComponent<HotTile>()
+                            .SetBuilding(tileDataLevelData[y, x]);
+                    }
                 }
             }
         }
