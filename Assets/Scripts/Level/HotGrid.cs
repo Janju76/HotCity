@@ -10,6 +10,13 @@ public class HotGrid : MonoBehaviour
     public LevelData LevelData;
     public SettingsData SettingsData;
 
+    public HotTile[,] Tiles;
+
+    private void Awake()
+    {
+        LevelData = Instantiate(LevelData);
+    }
+
     void OnEnable()
     {
         Refresh();
@@ -48,6 +55,8 @@ public class HotGrid : MonoBehaviour
                         instantiated.GetComponent<HotTile>()
                             .SetBuilding(tileDataLevelData[y, x]);
                     }
+
+                    Tiles[y, x] = instantiated.GetComponent<HotTile>();
                 }
             }
         }
