@@ -10,7 +10,7 @@ public class HotGrid : MonoBehaviour
     public LevelData LevelData;
     public SettingsData SettingsData;
 
-    void OnEnable()
+    void Start()
     {
         Refresh();
     }
