@@ -15,6 +15,7 @@ public class BuildingType : ScriptableObject {
     public List<BuildingType> goodNeighbour = new List<BuildingType>();
     public List<BuildingType> badNeighbour = new List<BuildingType>();
 
+    public Color TileColor;
 
     /// <summary>
     /// Returns the BuildingType Relation
