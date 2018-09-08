@@ -26,6 +26,11 @@ public class HotGrid : MonoBehaviour
     {
     }
 
+    public void SetBuilding(int x, int y)
+    {
+        
+    }
+
     public void Refresh()
     {
         LevelData.Refresh();
@@ -33,16 +38,13 @@ public class HotGrid : MonoBehaviour
 
         int totalXAmount = tileDataLevelData.GetLength(0);
         int totalYAmount = tileDataLevelData.GetLength(1);
-<<<<<<< HEAD
+
         int halfTotalWidth = totalXAmount * (SettingsData.TileWidth + SettingsData.SpaceBetweenTiles) / 2;
         int halfTotalHeight = totalYAmount * (SettingsData.TileHeight + SettingsData.SpaceBetweenTiles) / 2;
-=======
-        int halfTotalWidth = totalXAmount * (SettingsData.TileWidth+SettingsData.SpaceBetweenTiles)/2;
-        int halfTotalHeight = totalYAmount * (SettingsData.TileHeight + SettingsData.SpaceBetweenTiles)/2;
+
 
         Tiles = new HotTile[totalXAmount, totalYAmount];
 
->>>>>>> 27d295a9b934ca2fe1ea5e2962024a7ab1678e3f
         for (var y = 0; y < totalYAmount; y++)
         {
             for (var x = 0; x < totalXAmount; x++)
