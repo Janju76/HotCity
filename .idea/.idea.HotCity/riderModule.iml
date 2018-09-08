@@ -6,8 +6,8 @@
       <excludeFolder url="file://$MODULE_DIR$/../../Library" />
       <excludeFolder url="file://$MODULE_DIR$/../../Packages" />
       <excludeFolder url="file://$MODULE_DIR$/../../Temp" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Temp/bin" />
-      <excludeFolder url="file://$MODULE_DIR$/../../obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Temp/UnityVS_bin/Debug" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Temp/UnityVS_obj/Debug" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

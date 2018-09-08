@@ -9,6 +9,7 @@ public class UIPreview : MonoBehaviour
 
     public Transform Container;
     public UIPoolItem PoolItem;
+    public Text Score;
 
     private void Start()
     {

@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
             Grid.Tiles[y, x].SetBuilding(first);
             Preview.Refresh();
             Score += CalculateScore(x, y, first);
+
+            SetScore(Score);
         }
     }
 
@@ -95,10 +97,17 @@ public class GameManager : MonoBehaviour
         LevelData = Instantiate(LevelData);
         LevelData.Refresh();
         Instance = this;
+
+        SetScore(Score);
     }
 
     private void Awake()
     {
         Init();
+    }
+
+    public void SetScore(int score)
+    {
+        Preview.Score.text = string.Format("Score: {0}", score);
     }
 }
