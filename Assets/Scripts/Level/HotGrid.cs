@@ -17,7 +17,7 @@ public class HotGrid : MonoBehaviour
         LevelData = Instantiate(LevelData);
     }
 
-    void OnEnable()
+    void Start()
     {
         Refresh();
     }

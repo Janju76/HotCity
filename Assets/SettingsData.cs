@@ -11,5 +11,5 @@ public class SettingsData : ScriptableObject
 
     [Header("Building Settings")]
     [Tooltip("Type of Buildings that are considered empty and will get a collider")]
-    public BuildingData emptyBuildingType;
+    public BuildingType emptyBuildingType;
 }

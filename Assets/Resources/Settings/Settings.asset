@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a62aba3f0208e48997739c555e29e9, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: 
-  SpaceBetweenTiles: 5
+  SpaceBetweenTiles: 0
   TileWidth: 20
   TileHeight: 20
+  emptyBuildingType: {fileID: 0}
