@@ -7,15 +7,11 @@ using Random = UnityEngine.Random;
 public class HotGrid : MonoBehaviour
 {
     public List<GameObject> GroundTilePrefab;
-    public LevelData LevelData;
+    
     public SettingsData SettingsData;
 
     public HotTile[,] Tiles;
 
-    private void Awake()
-    {
-        LevelData = Instantiate(LevelData);
-    }
 
     void Start()
     {
@@ -28,8 +24,8 @@ public class HotGrid : MonoBehaviour
 
     public void Refresh()
     {
-        LevelData.Refresh();
-        var tileDataLevelData = LevelData.BuildingOnTiles;
+        
+        var tileDataLevelData = GameManager.Instance.LevelData.BuildingOnTiles;
 
         int totalXAmount = tileDataLevelData.GetLength(0);
         int totalYAmount = tileDataLevelData.GetLength(1);
@@ -44,7 +40,7 @@ public class HotGrid : MonoBehaviour
         {
             for (var x = 0; x < totalXAmount; x++)
             {
-                if (LevelData.TileExists[y, x])
+                if (GameManager.Instance.LevelData.TileExists[y, x])
                 {
                     int xPos = (SettingsData.TileWidth + SettingsData.SpaceBetweenTiles) * x;
                     int zPos = (SettingsData.TileHeight + SettingsData.SpaceBetweenTiles) * y;

@@ -28,12 +28,13 @@ public class HotTile : MonoBehaviour
     {
         if (GameManager.Instance.SelectedTile == gameObject)
         {
-        GameManager.Instance.SelectedTile = null;
+            GameManager.Instance.SelectedTile = null;
         }
     }
 
     private void OnMouseDown()
     {
+        GameManager.Instance.SetBuilding(X,Y);
     }
 
     public void SetBuilding(BuildingData newBuilding)

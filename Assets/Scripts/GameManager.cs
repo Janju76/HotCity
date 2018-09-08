@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -15,13 +16,23 @@ public class GameManager : MonoBehaviour
 
     public GameObject SelectedTile = null;
 
+    public LevelData LevelData;
+
     public void SetBuilding(int x, int y)
     {
+        BuildingData first = LevelData.BuildingQ.FirstOrDefault();
+        if (first != null)
+        {
+            LevelData.BuildingQ.RemoveAt(0);
+        }
 
+        Grid.Tiles[y,x].SetBuilding(first);
     }
 
     private void Awake()
     {
+        LevelData = Instantiate(LevelData);
+        LevelData.Refresh();
         Instance = this;
     }
 
