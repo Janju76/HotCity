@@ -9,6 +9,15 @@ public class HotTile : MonoBehaviour
     private BuildingData    buildingData;
     private GameObject      myBuilding;
 
+    public int X;
+    public int Y;
+
+    public void SetPos(int x, int y)
+    {
+        X = x;
+        Y = y;
+    }
+
     //Detect if the Cursor starts to pass over the GameObject
     private void OnMouseEnter()
     {
@@ -21,6 +30,11 @@ public class HotTile : MonoBehaviour
         {
         GameManager.Instance.SelectedTile = null;
         }
+    }
+
+    private void OnMouseDown()
+    {
+        GameManager.Instance.Grid.SetBuilding(X, Y);
     }
 
     public void SetBuilding(BuildingData newBuilding)
