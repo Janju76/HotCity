@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Name: Small Bank
   m_EditorClassIdentifier: 
   colorReference: {r: 0, g: 0, b: 0, a: 0}
-  buildingType: {fileID: 0}
+  buildingType: {fileID: 11400000, guid: 6b5c2cd42daab9e42bb6b40d128f41ad, type: 2}
   buildingName: Small Bank
   Icon: {fileID: 0}
   buildingSize: 1
   buildingPrefab: {fileID: 100002, guid: 8c7b2e68e4afd6e44b1cc0f4f5cf970d, type: 3}
+  buildingScaleFactor: {x: 0.1, y: 2, z: 0.1}
   fusions: {fileID: 0}

@@ -34,7 +34,7 @@ public class HotGrid : MonoBehaviour
         int halfTotalHeight = totalYAmount * (SettingsData.TileHeight + SettingsData.SpaceBetweenTiles) / 2;
 
 
-        Tiles = new HotTile[totalXAmount, totalYAmount];
+        Tiles = new HotTile[totalYAmount,totalXAmount];
 
         for (var y = 0; y < totalYAmount; y++)
         {

@@ -17,6 +17,11 @@ public class HotTile : MonoBehaviour
         return buildingData != null;
     }
 
+    public BuildingData GetBuildingData()
+    {
+        return buildingData;
+    }
+
     public void SetPos(int x, int y)
     {
         X = x;
