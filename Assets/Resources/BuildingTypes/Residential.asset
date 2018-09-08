@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c699d29f4055f4d8fe0a86cb8b172d, type: 3}
   m_Name: Residential
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: c66821d4048bd0749a2e70c2aee5ff56, type: 3}
+  Icon: {fileID: 21300000, guid: 3787498517b077349ac92854a7bb066f, type: 3}
   goodNeighbour:
   - {fileID: 11400000, guid: 5460f853bbe81ae488c59b4a64cd0832, type: 2}
   - {fileID: 11400000, guid: 6b5c2cd42daab9e42bb6b40d128f41ad, type: 2}

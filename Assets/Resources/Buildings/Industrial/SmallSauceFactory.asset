@@ -14,7 +14,8 @@ MonoBehaviour:
   colorReference: {r: 0.3803922, g: 0.3803922, b: 0.3803922, a: 0}
   buildingType: {fileID: 11400000, guid: 1992c8cfe333094448f45a8c6ad83962, type: 2}
   buildingName: Small Sauce Factory
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6a82ae2d5ca27a74e997811d9b288210, type: 3}
   buildingSize: 1
-  buildingPrefab: {fileID: 0}
+  buildingPrefab: {fileID: 100002, guid: 3107fce3667a69944b1f2f5dd61a54d1, type: 3}
+  buildingScaleFactor: {x: 0.1, y: 2, z: 0.1}
   fusions: {fileID: 0}

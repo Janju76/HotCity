@@ -14,7 +14,8 @@ MonoBehaviour:
   colorReference: {r: 0.3803922, g: 0.3803922, b: 0.3803922, a: 0}
   buildingType: {fileID: 11400000, guid: 1992c8cfe333094448f45a8c6ad83962, type: 2}
   buildingName: Metal Factory
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 990a6d7404863464386a0c67ec8795a4, type: 3}
   buildingSize: 4
-  buildingPrefab: {fileID: 0}
+  buildingPrefab: {fileID: 100002, guid: 91e3d67c1d7849c44aa9fcac1617d927, type: 3}
+  buildingScaleFactor: {x: 0.1, y: 2, z: 0.1}
   fusions: {fileID: 0}

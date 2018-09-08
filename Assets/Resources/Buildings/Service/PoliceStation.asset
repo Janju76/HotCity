@@ -9,13 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 505da8f7cfc3bb246abf1e918e9c362c, type: 3}
-  m_Name: LargeLivingHouse
+  m_Name: PoliceStation
   m_EditorClassIdentifier: 
   colorReference: {r: 0, g: 0, b: 0, a: 1}
-  buildingType: {fileID: 11400000, guid: 466df3f1d0f28334bb519ec88f80c136, type: 2}
+  buildingType: {fileID: 11400000, guid: 6798cede5cdfa6c47b3991d932e763a8, type: 2}
   buildingName: Large Living House
-  Icon: {fileID: 21300000, guid: 0e41a842f6e0145409c7e55dd1eb5ced, type: 3}
+  Icon: {fileID: 21300000, guid: 9497f8596b68a2e4da01992f0e206428, type: 3}
   buildingSize: 4
-  buildingPrefab: {fileID: 0}
+  buildingPrefab: {fileID: 100002, guid: 95529c4008cf6c34a90864c76b49017e, type: 3}
   buildingScaleFactor: {x: 0.1, y: 2, z: 0.1}
   fusions: {fileID: 11400000, guid: 396c33dd8117f7a4e9aaeff4b544e2a4, type: 2}

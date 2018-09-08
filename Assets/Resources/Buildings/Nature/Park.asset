@@ -9,13 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 505da8f7cfc3bb246abf1e918e9c362c, type: 3}
-  m_Name: LargeSauceFactory
+  m_Name: Park
   m_EditorClassIdentifier: 
-  colorReference: {r: 0.3803922, g: 0.3803922, b: 0.3803922, a: 0}
-  buildingType: {fileID: 11400000, guid: 1992c8cfe333094448f45a8c6ad83962, type: 2}
-  buildingName: Large Hot Sauce Factory
-  Icon: {fileID: 21300000, guid: 6a82ae2d5ca27a74e997811d9b288210, type: 3}
+  colorReference: {r: 0, g: 0, b: 0, a: 1}
+  buildingType: {fileID: 11400000, guid: 5460f853bbe81ae488c59b4a64cd0832, type: 2}
+  buildingName: Park
+  Icon: {fileID: 21300000, guid: 3d55d3d542ef76e4bb88501d53dddd2b, type: 3}
   buildingSize: 4
-  buildingPrefab: {fileID: 100002, guid: 3107fce3667a69944b1f2f5dd61a54d1, type: 3}
+  buildingPrefab: {fileID: 100002, guid: a2c800d09150c2849a9d3f0dd1f6f48f, type: 3}
   buildingScaleFactor: {x: 0.1, y: 2, z: 0.1}
-  fusions: {fileID: 0}
+  fusions: {fileID: 11400000, guid: 396c33dd8117f7a4e9aaeff4b544e2a4, type: 2}

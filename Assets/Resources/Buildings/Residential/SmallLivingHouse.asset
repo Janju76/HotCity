@@ -14,7 +14,8 @@ MonoBehaviour:
   colorReference: {r: 0, g: 0, b: 0, a: 1}
   buildingType: {fileID: 11400000, guid: 466df3f1d0f28334bb519ec88f80c136, type: 2}
   buildingName: 
-  Icon: {fileID: 21300000, guid: c66821d4048bd0749a2e70c2aee5ff56, type: 3}
+  Icon: {fileID: 21300000, guid: e5a04b5786739a44e9052b064ab765de, type: 3}
   buildingSize: 1
   buildingPrefab: {fileID: 100002, guid: a84ff755cab8ff64796dfe4ffdd691db, type: 3}
+  buildingScaleFactor: {x: 0.1, y: 2, z: 0.1}
   fusions: {fileID: 11400000, guid: 396c33dd8117f7a4e9aaeff4b544e2a4, type: 2}
