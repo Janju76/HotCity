@@ -26,7 +26,7 @@ public class HotGrid : MonoBehaviour
     public void Refresh()
     {
         LevelData.Refresh();
-        var tileDataLevelData = LevelData.Tiles;
+        var tileDataLevelData = LevelData.BuildingOnTiles;
 
         int totalXAmount = tileDataLevelData.GetLength(0);
         int totalYAmount = tileDataLevelData.GetLength(1);
