@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505da8f7cfc3bb246abf1e918e9c362c, type: 3}
   m_Name: School
   m_EditorClassIdentifier: 
-  colorReference: {r: 0, g: 0, b: 0, a: 1}
+  colorReference: {r: 0.26962438, g: 0.35304704, b: 0.6886792, a: 1}
   buildingType: {fileID: 11400000, guid: 6798cede5cdfa6c47b3991d932e763a8, type: 2}
   buildingName: Large Living House
   Icon: {fileID: 21300000, guid: 87ab0985a0799b5468c0bdaf09134598, type: 3}
