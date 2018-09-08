@@ -11,6 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c699d29f4055f4d8fe0a86cb8b172d, type: 3}
   m_Name: Empty
   m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: b9e733125336b3a429e1ff032aceac82, type: 3}
+  Name: Empty
   goodNeighbour: []
   badNeighbour: []
   TileColor: {r: 1, g: 1, b: 1, a: 1}

@@ -9,12 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 505da8f7cfc3bb246abf1e918e9c362c, type: 3}
-  m_Name: Wood
+  m_Name: Playground
   m_EditorClassIdentifier: 
   colorReference: {r: 0.078431375, g: 0.627451, b: 0, a: 1}
-  buildingType: {fileID: 11400000, guid: 605d8a81b14dc7248a3db816d43c1c46, type: 2}
-  buildingName: Grass
-  Icon: {fileID: 21300000, guid: 073f488debc8eca479701fd790dae343, type: 3}
+  buildingType: {fileID: 11400000, guid: 5460f853bbe81ae488c59b4a64cd0832, type: 2}
+  buildingName: Playground
+  Icon: {fileID: 21300000, guid: 006dd8143ddccdb4099d66c65ea25528, type: 3}
   buildingSize: 1
-  buildingPrefab: {fileID: 100002, guid: 52637b0829e043c4bbbfd152db67756c, type: 3}
+  buildingPrefab: {fileID: 100002, guid: e9fe552d8b83e8b4a9fbcd9e35a3da57, type: 3}
+  buildingScaleFactor: {x: 0.1, y: 2, z: 0.1}
   fusions: {fileID: 0}

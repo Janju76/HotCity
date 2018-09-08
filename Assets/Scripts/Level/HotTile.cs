@@ -64,8 +64,9 @@ public class HotTile : MonoBehaviour
 
                 if (meshRenderer)
                 {
-                    collider.center = meshRenderer.bounds.center;
-                    collider.size = meshRenderer.bounds.size;
+                    collider.center = Vector3.zero;
+                    // Hack
+                    collider.size = new Vector3(10, 10, 10);
                 }
             }
         }

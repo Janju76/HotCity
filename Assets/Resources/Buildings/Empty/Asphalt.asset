@@ -11,10 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505da8f7cfc3bb246abf1e918e9c362c, type: 3}
   m_Name: Asphalt
   m_EditorClassIdentifier: 
-  colorReference: {r: 0, g: 0, b: 0, a: 0}
+  colorReference: {r: 1, g: 1, b: 1, a: 1}
   buildingType: {fileID: 11400000, guid: 605d8a81b14dc7248a3db816d43c1c46, type: 2}
   buildingName: Grass
-  Icon: {fileID: 21300000, guid: 073f488debc8eca479701fd790dae343, type: 3}
+  Icon: {fileID: 21300000, guid: b9e733125336b3a429e1ff032aceac82, type: 3}
   buildingSize: 1
   buildingPrefab: {fileID: 100002, guid: 3543e81961d575d4a9b759681af069cc, type: 3}
+  buildingScaleFactor: {x: 0.1, y: 2, z: 0.1}
   fusions: {fileID: 0}
