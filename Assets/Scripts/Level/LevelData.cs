@@ -10,11 +10,12 @@ public class LevelData : ScriptableObject
 
     public bool[,] Tiles;
 
+    public List<Building> BuildingQ = new List<Building>();
+
     public void Refresh()
     {
         Tiles = new bool[Level.width, Level.height];
-
-
+        
         for (var y = 0; y < Level.height; y++)
         {
             for (var x = 0; x < Level.width; x++)

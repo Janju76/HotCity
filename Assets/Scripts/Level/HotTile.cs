@@ -4,7 +4,5 @@ using UnityEngine;
 
 public class HotTile : MonoBehaviour
 {
-    public int ID;
-
 
 }

@@ -8,8 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e4f3df15bda21846a99ec08286fd461, type: 3}
-  m_Name: Level1
+  m_Script: {fileID: 11500000, guid: 15a62aba3f0208e48997739c555e29e9, type: 3}
+  m_Name: Settings
   m_EditorClassIdentifier: 
-  Name: Level 1
-  Level: {fileID: 2800000, guid: 1448d97314243b940aef69aec5291d79, type: 3}
+  SpaceBetweenTiles: 5
+  TileWidth: 20
+  TileHeight: 20

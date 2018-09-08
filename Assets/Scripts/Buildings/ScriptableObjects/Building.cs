@@ -16,7 +16,9 @@ public class Building : ScriptableObject {
     public BuildingType buildingType;
 
     [Tooltip("Name of the building")]
-    public string       buildingName;
+    public string buildingName;
+
+    public Sprite Icon;
 
     public EBuildingSize buildingSize = EBuildingSize.SMALL;
 

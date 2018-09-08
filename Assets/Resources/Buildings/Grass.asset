@@ -11,8 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505da8f7cfc3bb246abf1e918e9c362c, type: 3}
   m_Name: Grass
   m_EditorClassIdentifier: 
+  colorReference: {r: 0, g: 0, b: 0, a: 0}
   buildingType: {fileID: 11400000, guid: 605d8a81b14dc7248a3db816d43c1c46, type: 2}
   buildingName: Grass
+  Icon: {fileID: 21300000, guid: 073f488debc8eca479701fd790dae343, type: 3}
   buildingSize: 1
   buildingPrefab: {fileID: 0}
   fusions: {fileID: 0}
