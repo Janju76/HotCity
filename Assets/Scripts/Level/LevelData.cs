@@ -41,17 +41,21 @@ public class LevelData : ScriptableObject
             for (var x = 0; x < Level.width; x++)
             {
                 Color c = Level.GetPixel(x, y);
-                if (c != Color.white)
+                if (c != Color.black) // black == no tile
                 {
                     TileExists[y, x] = true;
-                    if (buildings.ContainsKey(c))
+
+                    if (c != Color.white) // white == empty tile
                     {
-                        List<BuildingData> buildingsList = buildings[c];
-                        BuildingOnTiles[y, x] = buildingsList[Random.Range(0, buildingsList.Count)];
-                    }
-                    else
-                    {
-                        Debug.LogError("leavel loading: color " + c + " not supported!");
+                        if (buildings.ContainsKey(c))
+                        {
+                            List<BuildingData> buildingsList = buildings[c];
+                            BuildingOnTiles[y, x] = buildingsList[Random.Range(0, buildingsList.Count)];
+                        }
+                        else
+                        {
+                            Debug.LogError("leavel loading: color " + c + " not supported!");
+                        }
                     }
                 }
                 else
