@@ -4,4 +4,5 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "newBuildingType", menuName = "HotCity/New Building Type")]
 public class BuildingType : ScriptableObject {
+     
 }
