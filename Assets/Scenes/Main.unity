@@ -633,22 +633,22 @@ Prefab:
     - target: {fileID: 224174800977855858, guid: 8a34a078a1ea5af4d8f1bb324539d7d6,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -541
+      value: -605
       objectReference: {fileID: 0}
     - target: {fileID: 224775741905580852, guid: 8a34a078a1ea5af4d8f1bb324539d7d6,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -605
+      value: -669
       objectReference: {fileID: 0}
     - target: {fileID: 224301188375705262, guid: 8a34a078a1ea5af4d8f1bb324539d7d6,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -340.5
+      value: -372.5
       objectReference: {fileID: 0}
     - target: {fileID: 224301188375705262, guid: 8a34a078a1ea5af4d8f1bb324539d7d6,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 377
+      value: 441
       objectReference: {fileID: 0}
     - target: {fileID: 114509427475138786, guid: 8a34a078a1ea5af4d8f1bb324539d7d6,
         type: 2}
