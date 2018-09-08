@@ -11,9 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505da8f7cfc3bb246abf1e918e9c362c, type: 3}
   m_Name: LargeLivingHouse
   m_EditorClassIdentifier: 
-  colorReference: {r: 0, g: 0, b: 0, a: 0}
+  colorReference: {r: 0, g: 0, b: 0, a: 1}
   buildingType: {fileID: 11400000, guid: 466df3f1d0f28334bb519ec88f80c136, type: 2}
   buildingName: Large Living House
+  Icon: {fileID: 0}
   buildingSize: 4
   buildingPrefab: {fileID: 0}
   fusions: {fileID: 11400000, guid: 396c33dd8117f7a4e9aaeff4b544e2a4, type: 2}

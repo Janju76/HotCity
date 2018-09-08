@@ -36,13 +36,15 @@ public class HotGrid : MonoBehaviour
         {
             for (var x = 0; x < totalYAmount; x++)
             {
-                if (tileDataLevelData[y, x])
+                if (LevelData.TileExists[y, x])
                 {
                     int xPos = (SettingsData.TileWidth + SettingsData.SpaceBetweenTiles) * x;
                     int zPos = (SettingsData.TileHeight + SettingsData.SpaceBetweenTiles) * y;
                     int range = Random.Range(0, GroundTilePrefab.Count);
                     GameObject toInstantiate = GroundTilePrefab[range];
-                    Instantiate(toInstantiate, new Vector3(xPos - halfTotalWidth, 0, zPos - halfTotalHeight), Quaternion.identity);
+                    GameObject instantiated = Instantiate(toInstantiate,
+                        new Vector3(xPos - halfTotalWidth, 0, zPos - halfTotalHeight), Quaternion.identity);
+                    instantiated.transform.parent = this.transform;
                 }
             }
         }

@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505da8f7cfc3bb246abf1e918e9c362c, type: 3}
   m_Name: SmallLivingHouse
   m_EditorClassIdentifier: 
-  colorReference: {r: 0, g: 0, b: 0, a: 0}
+  colorReference: {r: 0, g: 0, b: 0, a: 1}
   buildingType: {fileID: 11400000, guid: 466df3f1d0f28334bb519ec88f80c136, type: 2}
   buildingName: 
   Icon: {fileID: 21300000, guid: c66821d4048bd0749a2e70c2aee5ff56, type: 3}
