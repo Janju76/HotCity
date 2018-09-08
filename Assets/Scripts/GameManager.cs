@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     public SettingsData Settings;
 
+    public BuildingType BuildingTypes;
+
     private void Awake()
     {
         Instance = this;
