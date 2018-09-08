@@ -1,0 +1,29 @@
+﻿Small = 1 Tile
+Large = 4 Tile
+
+Residental:
+Small Living House -> Large Living House
+
+Small City Apartements ->Large City Apartements
+
+Small Suburban Block -> Large Suburban Block
+
+Recreational:
+Wood
+Small Park 	 -> Large Park
+Small Playground -> Large Playground
+Small Pool	 -> Large Pool
+
+Industrial:
+Small Workshop -> Heavy Metal Industry
+Small Sauce Factory -> Large Hot Sauce Factory
+
+Commercial:
+Small Bank -> Large Bank (Großer Banken tower)
+Supermarket -> Shopping Mall
+
+City Service:
+Small Police
+Small Firestation
+Small School
+Small Library
