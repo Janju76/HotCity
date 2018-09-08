@@ -9,15 +9,6 @@ public class HotTile : MonoBehaviour
     private BuildingData    buildingData;
     private GameObject      myBuilding;
 
-    public int X;
-    public int Y;
-
-    public void SetPos(int x, int y)
-    {
-        X = x;
-        Y = y;
-    }
-
     //Detect if the Cursor starts to pass over the GameObject
     private void OnMouseEnter()
     {
@@ -44,6 +35,7 @@ public class HotTile : MonoBehaviour
         if (newBuilding.buildingPrefab)
         {
             myBuilding = Instantiate<GameObject>(newBuilding.buildingPrefab, transform);
+            myBuilding.transform.localScale = buildingData.buildingScaleFactor;
 
             if (buildingData.buildingType == GameManager.Instance.Settings.emptyBuildingType)
             {
