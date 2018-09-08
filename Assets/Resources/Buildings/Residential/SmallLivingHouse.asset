@@ -16,5 +16,5 @@ MonoBehaviour:
   buildingName: 
   Icon: {fileID: 21300000, guid: c66821d4048bd0749a2e70c2aee5ff56, type: 3}
   buildingSize: 1
-  buildingPrefab: {fileID: 0}
+  buildingPrefab: {fileID: 100002, guid: a84ff755cab8ff64796dfe4ffdd691db, type: 3}
   fusions: {fileID: 11400000, guid: 396c33dd8117f7a4e9aaeff4b544e2a4, type: 2}

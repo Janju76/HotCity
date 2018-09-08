@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class HotTile : MonoBehaviour
 {
-    private BuildingData  buildingData;
-    private GameObject    myBuilding;
+    private BuildingData    buildingData;
+    private GameObject      myBuilding;
 
     public void SetBuilding(BuildingData newBuilding)
     {
@@ -18,6 +18,20 @@ public class HotTile : MonoBehaviour
         buildingData = newBuilding;
 
         if (newBuilding.buildingPrefab)
+        {
             myBuilding = Instantiate<GameObject>(newBuilding.buildingPrefab, transform);
+
+            if (buildingData.buildingType == GameManager.Instance.Settings.emptyBuildingType)
+            {
+                BoxCollider collider = myBuilding.AddComponent<BoxCollider>();
+                MeshRenderer meshRenderer = myBuilding.GetComponentInChildren<MeshRenderer>();
+
+                if (meshRenderer)
+                {
+                    collider.center = meshRenderer.bounds.center;
+                    collider.size = meshRenderer.bounds.size;
+                }
+            }
+        }
     }
 }
