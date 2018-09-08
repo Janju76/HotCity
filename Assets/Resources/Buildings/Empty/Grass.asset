@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505da8f7cfc3bb246abf1e918e9c362c, type: 3}
   m_Name: Grass
   m_EditorClassIdentifier: 
-  colorReference: {r: 0.5263733, g: 1, b: 0.495283, a: 1}
+  colorReference: {r: 1, g: 1, b: 1, a: 1}
   buildingType: {fileID: 11400000, guid: 605d8a81b14dc7248a3db816d43c1c46, type: 2}
   buildingName: Grass
   Icon: {fileID: 21300000, guid: 4ea570482559d344b99420ef40dafe88, type: 3}
