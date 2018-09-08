@@ -14,4 +14,4 @@ MonoBehaviour:
   SpaceBetweenTiles: 0
   TileWidth: 20
   TileHeight: 20
-  emptyBuildingType: {fileID: 0}
+  emptyBuildingType: {fileID: 11400000, guid: 605d8a81b14dc7248a3db816d43c1c46, type: 2}

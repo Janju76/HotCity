@@ -25,6 +25,8 @@ public class BuildingData : ScriptableObject
     [Tooltip("Building Prefab")]
     public GameObject buildingPrefab;
 
+    public Vector3 buildingScaleFactor = new Vector3(0.1f, 2f, 0.1f);
+
     public BuildingFusionDictionary fusions;
 
 }
