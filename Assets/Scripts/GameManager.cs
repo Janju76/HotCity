@@ -14,9 +14,9 @@ public class GameManager : MonoBehaviour
 
     public HotGrid Grid;
 
-    public GameObject SelectedTile = null;
-
     public LevelData LevelData;
+
+    public UIPreview Preview;
 
     public void SetBuilding(int x, int y)
     {
@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
             }
 
             Grid.Tiles[y, x].SetBuilding(first);
+
+            Preview.Refresh();
         }
     }
 

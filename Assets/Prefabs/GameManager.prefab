@@ -48,6 +48,8 @@ MonoBehaviour:
   Level:
   - {fileID: 11400000, guid: e347c74cfa3b2674ab5c76d6d373d326, type: 2}
   Grid: {fileID: 0}
+  LevelData: {fileID: 11400000, guid: e347c74cfa3b2674ab5c76d6d373d326, type: 2}
+  Preview: {fileID: 0}
 --- !u!224 &224162181500905024
 RectTransform:
   m_ObjectHideFlags: 1

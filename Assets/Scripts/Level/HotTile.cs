@@ -23,18 +23,14 @@ public class HotTile : MonoBehaviour
         Y = y;
     }
 
-    //Detect if the Cursor starts to pass over the GameObject
     private void OnMouseEnter()
     {
-        GameManager.Instance.SelectedTile = gameObject;
+
     }
 
     private void OnMouseExit()
     {
-        if (GameManager.Instance.SelectedTile == gameObject)
-        {
-            GameManager.Instance.SelectedTile = null;
-        }
+
     }
 
     private void OnMouseDown()
