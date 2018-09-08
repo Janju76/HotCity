@@ -20,13 +20,16 @@ public class GameManager : MonoBehaviour
 
     public void SetBuilding(int x, int y)
     {
-        BuildingData first = LevelData.BuildingQ.FirstOrDefault();
-        if (first != null)
+        if (!Grid.Tiles[y, x].HasBuilding())
         {
-            LevelData.BuildingQ.RemoveAt(0);
-        }
+            BuildingData first = LevelData.BuildingQ.FirstOrDefault();
+            if (first != null)
+            {
+                LevelData.BuildingQ.RemoveAt(0);
+            }
 
-        Grid.Tiles[y,x].SetBuilding(first);
+            Grid.Tiles[y, x].SetBuilding(first);
+        }
     }
 
     private void Awake()
@@ -35,5 +38,4 @@ public class GameManager : MonoBehaviour
         LevelData.Refresh();
         Instance = this;
     }
-
 }
